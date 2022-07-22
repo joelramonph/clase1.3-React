@@ -1,7 +1,7 @@
 
 import './App.css'
 import Card from './components/Card'
-import Tech from './components/Tech'
+
 
 function App() {
   
@@ -9,22 +9,25 @@ function App() {
    name: "Joel Parra",
    age: 51,
    favoriteMovie: "La vida es bella",
-   favoiterMusic: "Rock 80"
+   favoriteMusic: "Rock 80"
  }
 
  const hobbies = {
     title: "Hobies",
-    list: ['Pasear al campo', 'Ir al cine','Ir restaurante']
+    list: ['Pasear al campo', 'Ir al cine','Ir restaurante'],
+    number: 2
  }
 
  const favoriteFood = {
   title: "Comida Favorita",
-  list: ['Cochino Asado', 'Camarones','Pescado frito']
+  list: ['Cochino Asado', 'Camarones','Pescado frito'],
+  number: 3
  }
 
  const myStackTech = {
   title: "Mi Stack Tech",
-  list: ['Html', 'Css','React']
+  list: ['Html', 'Css','React'],
+  number: 4
  }
 
   return (
@@ -34,15 +37,14 @@ function App() {
       <li className='list__item'><b>Nombre:</b>{me.name}</li>
       <li className='list__item'><b>Edad:</b>{me.age} años</li>
       <li className='list__item'><b>Pelicula Favorita:</b>{me.favoriteMovie}</li>
-      <li className='list__item'><b>Musica Favorita:</b>{me.favoiterMusic}</li>
+      <li className='list__item'><b>Musica Favorita:</b>{me.favoriteMusic}</li>
     </ul>
     
     <Card objInfo = {hobbies}/>
     
     <Card objInfo = {favoriteFood}/>
 
-    
-    <Tech techInfo = {myStackTech}/>
+    <Card objInfo = {myStackTech}/>
     
     </div>
   )

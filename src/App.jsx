@@ -7,7 +7,7 @@ function App() {
   
  const me = {
    name: "Joel Parra",
-   age: 52,
+   age: 51,
    favoriteMovie: "La vida es bella",
    favoiterMusic: "Rock 80"
  }
